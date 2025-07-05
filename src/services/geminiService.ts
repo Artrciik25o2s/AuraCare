@@ -7,7 +7,7 @@ class GeminiService {
   constructor() {
     // Read API key from meta tag
     const metaTag = document.querySelector('meta[name="gemini-api-key"]');
-    this.apiKey = metaTag?.getAttribute('content') || 'AIzaSyA70cUGlLt7yDp4FQ3_FM1wCzDlsMILf2g';
+    this.apiKey = metaTag?.getAttribute('content');
     
     console.log('Initializing Gemini service with API key:', this.apiKey ? 'Key found: ' + this.apiKey.substring(0, 20) + '...' : 'No key found');
   }
